@@ -8,4 +8,34 @@
 
 body {
   background-color: #5b2386;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-bg {
+  position: absolute;
+  top: 10px;
+}
+
+.header-title {
+  position: absolute;
+  top: 80px;
+}
+
+section {
+  position: relative;
+  top: 300px;
+}
+
+footer {
+  position: relative;
+  top: 350px;
 }
