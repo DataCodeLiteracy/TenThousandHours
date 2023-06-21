@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
     format("woff");
@@ -6,11 +14,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
+      format("woff"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
+      format("opentype");
+}
+
 body {
   background-color: #5b2386;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  color: white;
+}
+
+button {
+  cursor: pointer;
 }
 
 .header-wrapper {
@@ -35,7 +62,104 @@ section {
   top: 300px;
 }
 
+.description {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0 70px 0;
+}
+
+.description > img {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.description-text {
+  text-align: center;
+  line-height: 1.5;
+}
+
+div strong {
+  font-weight: bold;
+}
+
+.inputGroup {
+  font-family: "Noto Sans KR";
+  text-align: center;
+  line-height: 2.5;
+}
+
+input {
+  text-align: center;
+  width: 128px;
+  height: 27px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+::placeholder {
+  opacity: 0.7;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  margin: 50px 0 70px 80px;
+  width: 80%;
+}
+
+.buttonGroup > button {
+  font-family: "GmarketSansBold";
+  background-color: yellow;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #5b2386;
+  padding: 0 25px 0 25px;
+}
+
+.buttonGroup > img {
+  margin-top: 25px;
+  width: 7%;
+}
+
+.buttonGroup button:nth-child(2) {
+  background-color: white;
+  width: 30%;
+  margin-left: 15px;
+}
+
+.resultGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.resultGroup > p > strong {
+  font-size: 40px;
+  padding: 5px;
+}
+
+.resultGroup > p {
+  line-height: 1.5;
+}
+
 footer {
   position: relative;
+  text-align: center;
   top: 350px;
+}
+
+footer > img {
+  width: 30%;
+}
+
+footer p {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-size: 10px;
+  line-height: 1.3;
 }
