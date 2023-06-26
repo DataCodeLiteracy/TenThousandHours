@@ -1,165 +1,184 @@
 @font-face {
-  font-family: "GmarketSansBold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
-    format("woff");
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
-      format("woff2"),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
-      format("woff"),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
-      format("opentype");
+  src: url('https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2')
+      format('woff2'),
+    url('https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff')
+      format('woff'),
+    url('https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf')
+      format('opentype');
 }
 
-body {
+#app {
+  font-family: GmarketSansMedium;
   background-color: #5b2386;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: 300;
   color: white;
-}
-
-button {
-  cursor: pointer;
-}
-
-.header-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-bg {
-  position: absolute;
-  top: 10px;
-}
-
-.header-title {
-  position: absolute;
-  top: 80px;
-}
-
-section {
-  position: relative;
-  top: 300px;
-}
-
-.description {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0 70px 0;
-}
-
-.description > img {
-  width: 20px;
-  height: 20px;
-  margin-top: 10px;
-}
-
-.description-text {
   text-align: center;
-  line-height: 1.5;
+  padding-bottom: 70px;
 }
 
-div strong {
+.tit-law {
+  display: inline-block;
+  position: relative;
+  margin-top: 194px;
+}
+
+.tit-law .img-tit {
+  position: relative;
+  z-index: 10;
+}
+
+.tit-law::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 225px;
+  height: 225px;
+  margin: -112px 0 0 -112px;
+  background-image: url('../images/title_bg.png');
+  background-position: center;
+}
+
+.txt-desc {
+  position: relative;
+  max-width: 475px;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 0 auto 96px;
+}
+
+.txt-desc::before,
+.txt-desc::after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  content: '';
+  width: 37px;
+  height: 32px;
+  margin-top: -16px;
+}
+
+.txt-desc::before {
+  left: 0;
+  background-image: url('../images/txt-left.png');
+}
+
+.txt-desc::after {
+  right: 0;
+  background-image: url('../images/txt-right.png');
+}
+
+.tit-desc {
+  font-size: 24px;
   font-weight: bold;
 }
 
-.inputGroup {
-  font-family: "Noto Sans KR";
-  text-align: center;
-  line-height: 2.5;
+.img-txt {
+  max-width: 486px;
+  margin: 125px auto 84px;
 }
 
-input {
+.cont-inp {
+  font-size: 24px;
+}
+
+p > input {
+  width: 224px;
+  height: 53px;
+  font-size: 24px;
   text-align: center;
-  width: 128px;
-  height: 27px;
-  border-radius: 3px;
-  outline: none;
+  vertical-align: 4px;
+  border-radius: 10px;
   border: none;
+  margin: 30px 15px 0 15px;
 }
 
-::placeholder {
-  opacity: 0.7;
-}
-
-.buttonGroup {
-  display: flex;
-  align-items: center;
-  margin: 50px 0 70px 80px;
-  width: 80%;
-}
-
-.buttonGroup > button {
-  font-family: "GmarketSansBold";
-  background-color: yellow;
-  height: 35px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  color: #5b2386;
-  padding: 0 25px 0 25px;
-}
-
-.buttonGroup > img {
-  margin-top: 25px;
-  width: 7%;
-}
-
-.buttonGroup button:nth-child(2) {
-  background-color: white;
-  width: 30%;
-  margin-left: 15px;
-}
-
-.resultGroup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.resultGroup > p > strong {
-  font-size: 40px;
-  padding: 5px;
-}
-
-.resultGroup > p {
-  line-height: 1.5;
-}
-
-footer {
+.btn-exc,
+.btn-go,
+.btn-share {
   position: relative;
-  text-align: center;
-  top: 350px;
+  font-family: GmarketSansBold;
+  font-size: 24px;
+  background-color: yellow;
+  color: #5b2386;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 50px 15px 50px;
+  margin-top: 100px;
 }
 
-footer > img {
-  width: 30%;
+.btn-share {
+  margin-left: 20px;
+  background-color: white;
 }
 
-footer p {
-  margin-top: 20px;
-  margin-bottom: 100px;
-  font-size: 10px;
-  line-height: 1.3;
+.cont-inp > button::after {
+  position: absolute;
+  right: 0;
+  display: block;
+  content: '';
+  width: 64px;
+  height: 72px;
+  margin: -30px -75px 0 0;
+  background-image: url('../images/hand.png');
+}
+
+.cont-result {
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 100px;
+}
+
+.cont-result .txt-wannabe,
+.cont-result .txt-time {
+  line-height: 68px;
+}
+
+.cont-result .txt-wannabe strong,
+.cont-result .txt-time strong {
+  font-size: 72px;
+  vertical-align: top;
+  font-family: GmarketSansBold;
+}
+
+.cont-footer {
+  font-family: Noto Sans KR;
+  font-size: 12px;
+  line-height: 17px;
+  margin-top: 100px;
+}
+
+.cont-footer .img-footer {
+  width: 125px;
+  height: 25px;
+  margin: 0 auto 20px;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
 }
