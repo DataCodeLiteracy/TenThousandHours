@@ -153,19 +153,19 @@ p > input {
   background-image: url('../images/hand.png');
 }
 
-.result_loading {
+.result-loading {
   display: none;
   justify-content: center;
   margin-bottom: 80px;
 }
 
-.result_loading .img_wrap {
+.result-loading .img-wrap {
   margin-top: 50px;
   width: 100px;
   height: 100px;
 }
 
-.result_loading .img_wrap img {
+.result-loading .img-wrap img {
   width: 100%;
   height: auto;
   animation: rotate 1.1s infinite linear;
@@ -203,7 +203,7 @@ p > input {
   z-index: 999;
 }
 
-#modal .modal_wrap {
+#modal .modal-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,7 +214,7 @@ p > input {
   border-radius: 20px;
 }
 
-#modal .modal_wrap img {
+#modal .modal-wrap img {
   width: 400px;
   height: 400px;
 }
@@ -234,16 +234,16 @@ p > input {
   font-size: 30px;
 }
 
-#modal .licat_img {
+#modal .licat-img {
   margin-bottom: 20px;
 }
 
-#modal .close_btn {
+#modal .close-btn {
   box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.15);
   margin-bottom: 20px;
 }
 
-#modal .modal_wrap .btn .close_btn {
+#modal .modal_wrap .btn .close-btn {
   margin-top: -30px;
 }
 

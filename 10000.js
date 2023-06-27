@@ -2,10 +2,10 @@
 const btnGo = document.querySelector('.btn-go')
 const btnShare = document.querySelector('.btn-share')
 const contInp = document.querySelector('.cont-inp')
-const closeBtn = document.querySelector('.close_btn')
+const closeBtn = document.querySelector('.close-btn')
 const result = document.querySelector('.cont-result')
 const modal = document.getElementById('modal')
-const loading = document.querySelector('.result_loading')
+const loading = document.querySelector('.result-loading')
 
 const wannabeInput = document.getElementById('wannabe-input')
 const timeInput = document.getElementById('time-input')
