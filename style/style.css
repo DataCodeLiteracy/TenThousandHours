@@ -153,14 +153,6 @@ p > input {
   background-image: url('../images/hand.png');
 }
 
-.txt-wrap {
-  width: 100%;
-}
-
-.btn-wrap {
-  width: 100%;
-}
-
 .result_loading {
   display: none;
   justify-content: center;
