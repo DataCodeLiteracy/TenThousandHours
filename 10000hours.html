@@ -24,12 +24,17 @@
       </p>
       <form class="cont-inp">
         <p class="txt-wannabe">
-          나는 <input type="text" placeholder="예)프로그래밍" />전문가가 될
-          것이다.
+          나는
+          <input
+            id="wannabe-input"
+            type="text"
+            placeholder="예)프로그래밍"
+          />전문가가 될 것이다.
         </p>
         <p class="txt-time">
           그래서 앞으로 매일 하루에
-          <input type="text" placeholder="예)5시간" />시간씩 훈련할 것이다.
+          <input id="time-input" type="text" placeholder="예)5시간" />시간씩
+          훈련할 것이다.
         </p>
         <button class="btn-exc">
           나는 며칠 동안 훈련을 해야 1만 시간이 될까?
@@ -42,14 +47,18 @@
       </div>
       <section class="cont-result">
         <h2 class="blind">결과 확인</h2>
-        <p class="txt-wannabe">
-          당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서
-        </p>
-        <p class="txt-time">
-          대략 <strong>1000</strong>일 이상 훈련하셔야 됩니다.
-        </p>
-        <button class="btn-go">훈런하러가기 GO!GO!</button>
-        <button class="btn-share">공유하기</button>
+        <div class="txt-wrap">
+          <p class="txt-wannabe">
+            당신은 <strong id="wannabe-text"></strong> 전문가가 되기 위해서
+          </p>
+          <p class="txt-time">
+            대략 <strong id="time-text"></strong>일 이상 훈련하셔야 됩니다.
+          </p>
+        </div>
+        <div class="btn-wrap">
+          <button class="btn-go">훈런하러가기 GO!GO!</button>
+          <button class="btn-share">공유하기</button>
+        </div>
       </section>
       <section id="modal">
         <div class="modal_wrap">
@@ -77,5 +86,6 @@
         </p>
       </footer>
     </main>
+    <script src="10000.js"></script>
   </body>
 </html>
